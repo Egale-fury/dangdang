@@ -1,6 +1,8 @@
 package com.eagle.dangdang.test;
 
 import java.util.Date;
+import java.util.Iterator;
+import java.util.List;
 
 import javax.annotation.Resource;
 
@@ -59,12 +61,35 @@ public class BookServiceTest {
 		System.out.println(bookService.fingProductById(1));
 	}
 	
-	@Test
+	//@Test
 	public void testGetBook(){
 		Book book =bookService.findBookById(2);
 		System.out.println(book.getProductName());
 	}
 
+	//@Test
+	public void testGetHotBooks(){
+		List<Book> list =bookService.getHotBooks(8);
+		Iterator<Book> it= list.iterator();
+		while(it.hasNext()){
+			Book book =it.next();
+			System.out.println(book.getProductName());
+			System.out.println(book.getPrintNum());
+		}
+	}
+	
+	@Test
+	public void testGetRecentBooks(){
+		List<Book> list =bookService.getRecentBooks(8);
+		Iterator<Book> it= list.iterator();
+		while(it.hasNext()){
+			Book book =it.next();
+			System.out.println(book.getProductName());
+//			System.out.println(book.getAuthorSummary());
+			System.out.println(book.getAddTime());
+		}
+	}
+	
 	public BookService getBookService() {
 		return bookService;
 	}

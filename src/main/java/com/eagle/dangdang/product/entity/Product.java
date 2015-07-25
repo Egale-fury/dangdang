@@ -41,9 +41,20 @@ public class Product {
 	@Column(name="product_name",nullable=false)
 	private String productName;
 	
+	@Column(name="description",nullable=false)
+	private String description;
+	
 	@Column(name="add_time")
 	private Date addTime;
 	
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
 	@Column(name="fixed_price")
 	private double fixedPrice;
 	
