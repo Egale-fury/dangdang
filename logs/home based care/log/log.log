@@ -1653,3 +1653,812 @@ line 1:31: unexpected token: (
 18:07:57,614  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
 18:07:57,698  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1ikm5ko1ubec8u|25c00e28, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1ikm5ko1ubec8u|25c00e28, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
 18:07:57,812  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@6ae006d8: startup date [Sat Jul 25 18:07:55 CST 2015]; root of context hierarchy
+19:12:22,920  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:12:22,938  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6ea4ffc6, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@129458ea, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4959742d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@fda5bfa, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@48cc8237]
+19:12:23,026  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+19:12:23,146  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+19:12:23,248  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+19:12:23,278  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@12eea70: startup date [Sat Jul 25 19:12:23 CST 2015]; root of context hierarchy
+19:12:23,413  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+19:12:23,418  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+19:12:23,494  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+19:12:23,629  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+19:12:23,699  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:23,711  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:23,714  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:23,761  INFO main log.MLog:92 - MLog clients using log4j logging.
+19:12:23,946  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+19:12:24,002  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:24,110  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+19:12:24,115  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+19:12:24,117  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+19:12:24,119  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+19:12:24,235  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:12:24,242  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+19:12:24,381  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+19:12:24,385  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+19:12:24,722  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+19:12:24,722  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+19:12:24,744  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1imx1pq2n0w1k|28285ae4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1imx1pq2n0w1k|28285ae4, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+19:12:24,935  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+19:12:24,960  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+19:12:24,960  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+19:12:24,961  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+19:12:24,961  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+19:12:24,972  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+19:12:24,973  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+19:12:24,973  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+19:12:24,974  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+19:12:24,982  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+19:12:24,983  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+19:12:24,983  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+19:12:24,984  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+19:12:24,993  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+19:12:24,993  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+19:12:24,994  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+19:12:24,994  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+19:12:25,004  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+19:12:25,004  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+19:12:25,005  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+19:12:25,005  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+19:12:25,014  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+19:12:25,015  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+19:12:25,015  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+19:12:25,016  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+19:12:25,017  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+19:12:25,025  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:25,026  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:25,033  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:25,036  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:25,052  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:25,056  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:12:25,146  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1imx1pq2n0w1k|28285ae4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1imx1pq2n0w1k|28285ae4, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+19:12:25,264  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@12eea70: startup date [Sat Jul 25 19:12:23 CST 2015]; root of context hierarchy
+20:42:12,039  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:42:12,057  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5ed74c35, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@8cc5c38, org.springframework.test.context.support.DirtiesContextTestExecutionListener@20ba650b, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2d3fc5f6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@35ddb0af]
+20:42:12,142  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+20:42:12,257  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+20:42:12,347  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+20:42:12,377  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@6e9ea162: startup date [Sat Jul 25 20:42:12 CST 2015]; root of context hierarchy
+20:42:12,501  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+20:42:12,505  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+20:42:12,571  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+20:42:12,711  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+20:42:12,776  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:12,785  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:12,787  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:12,828  INFO main log.MLog:92 - MLog clients using log4j logging.
+20:42:12,993  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+20:42:13,046  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:13,147  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+20:42:13,153  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+20:42:13,154  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+20:42:13,156  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+20:42:13,271  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:42:13,277  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+20:42:13,417  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+20:42:13,421  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+20:42:13,775  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+20:42:13,776  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+20:42:13,797  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1iq4jxx1czem54|9d62c08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1iq4jxx1czem54|9d62c08, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+20:42:13,968  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+20:42:13,993  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+20:42:13,993  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+20:42:13,994  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+20:42:13,995  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+20:42:14,004  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+20:42:14,005  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+20:42:14,005  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+20:42:14,006  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+20:42:14,014  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+20:42:14,015  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+20:42:14,015  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+20:42:14,016  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+20:42:14,024  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_orderline
+20:42:14,025  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [amount, id, product_num, product_id]
+20:42:14,025  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_gvhxin4dmxj6hyjij6dft59du]
+20:42:14,026  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_gvhxin4dmxj6hyjij6dft59du, primary]
+20:42:14,034  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+20:42:14,035  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+20:42:14,035  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+20:42:14,036  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+20:42:14,045  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+20:42:14,045  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+20:42:14,046  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+20:42:14,046  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+20:42:14,056  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+20:42:14,057  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+20:42:14,057  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+20:42:14,058  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+20:42:14,067  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order
+20:42:14,067  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, order_desc, address_id, status, order_time, user_id, total_price]
+20:42:14,068  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_5svulh5x73mw5hrexlnxucxeq, fk_l7hfolyfuxf4e59q597j98t2h]
+20:42:14,069  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_5svulh5x73mw5hrexlnxucxeq, primary, fk_l7hfolyfuxf4e59q597j98t2h]
+20:42:14,077  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order_d_orderline
+20:42:14,077  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_order_id, orderlines_id]
+20:42:14,078  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_ewncatcnu1sdt050h5xol8olt, fk_lu7cpib903r4l05bcv911lnre]
+20:42:14,078  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, uk_lu7cpib903r4l05bcv911lnre]
+20:42:14,080  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+20:42:14,087  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:14,089  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:14,095  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:14,098  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:14,112  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:14,115  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:14,203  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1iq4jxx1czem54|9d62c08, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1iq4jxx1czem54|9d62c08, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+20:42:14,215 ERROR main context.TestContextManager:215 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@8cc5c38] to prepare test instance [com.eagle.dangdang.test.OrderServiceTest@61b484b4]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.eagle.dangdang.test.OrderServiceTest': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.eagle.dangdang.order.service.OrderService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, mappedName=, description=, name=, type=class java.lang.Object, authenticationType=CONTAINER, lookup=)}
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:308)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1210)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:385)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:200)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:259)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:261)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:219)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [com.eagle.dangdang.order.service.OrderService] found for dependency: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {@javax.annotation.Resource(shareable=true, mappedName=, description=, name=, type=class java.lang.Object, authenticationType=CONTAINER, lookup=)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoSuchBeanDefinitionException(DefaultListableBeanFactory.java:1301)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1047)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:942)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:457)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:435)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:559)
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:169)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessPropertyValues(CommonAnnotationBeanPostProcessor.java:305)
+	... 26 more
+20:42:14,236  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@6e9ea162: startup date [Sat Jul 25 20:42:12 CST 2015]; root of context hierarchy
+20:42:55,742  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:42:55,759  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@8cc5c38, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@20ba650b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@2d3fc5f6, org.springframework.test.context.transaction.TransactionalTestExecutionListener@35ddb0af, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6d7accc9]
+20:42:55,846  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+20:42:55,958  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+20:42:56,056  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+20:42:56,086  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@707561aa: startup date [Sat Jul 25 20:42:56 CST 2015]; root of context hierarchy
+20:42:56,215  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+20:42:56,220  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+20:42:56,294  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+20:42:56,431  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+20:42:56,496  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:56,505  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:56,507  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:56,546  INFO main log.MLog:92 - MLog clients using log4j logging.
+20:42:56,716  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+20:42:56,769  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:56,864  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+20:42:56,870  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+20:42:56,872  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+20:42:56,874  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+20:42:56,992  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:42:56,999  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+20:42:57,141  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+20:42:57,145  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+20:42:57,494  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+20:42:57,494  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+20:42:57,516  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1iq5hob4bchpf|605a572e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1iq5hob4bchpf|605a572e, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+20:42:57,695  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+20:42:57,720  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+20:42:57,721  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+20:42:57,722  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+20:42:57,722  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+20:42:57,732  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+20:42:57,732  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+20:42:57,733  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+20:42:57,733  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+20:42:57,742  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+20:42:57,742  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+20:42:57,743  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+20:42:57,743  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+20:42:57,751  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_orderline
+20:42:57,752  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [amount, id, product_num, product_id]
+20:42:57,752  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_gvhxin4dmxj6hyjij6dft59du]
+20:42:57,753  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_gvhxin4dmxj6hyjij6dft59du, primary]
+20:42:57,762  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+20:42:57,762  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+20:42:57,763  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+20:42:57,763  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+20:42:57,772  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+20:42:57,773  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+20:42:57,773  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+20:42:57,774  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+20:42:57,783  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+20:42:57,784  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+20:42:57,784  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+20:42:57,785  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+20:42:57,794  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order
+20:42:57,794  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, order_desc, address_id, status, order_time, user_id, total_price]
+20:42:57,795  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_5svulh5x73mw5hrexlnxucxeq, fk_l7hfolyfuxf4e59q597j98t2h]
+20:42:57,795  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_5svulh5x73mw5hrexlnxucxeq, primary, fk_l7hfolyfuxf4e59q597j98t2h]
+20:42:57,804  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order_d_orderline
+20:42:57,805  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_order_id, orderlines_id]
+20:42:57,806  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_ewncatcnu1sdt050h5xol8olt, fk_lu7cpib903r4l05bcv911lnre]
+20:42:57,806  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, uk_lu7cpib903r4l05bcv911lnre]
+20:42:57,807  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+20:42:57,815  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:57,816  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:57,823  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:57,825  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:57,839  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:57,842  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:42:57,933  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1iq5hob4bchpf|605a572e, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1iq5hob4bchpf|605a572e, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+20:42:58,055  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@707561aa: startup date [Sat Jul 25 20:42:56 CST 2015]; root of context hierarchy
+20:53:47,480  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:53:47,496  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@26c3455c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dfeaee5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b8c6c98, org.springframework.test.context.transaction.TransactionalTestExecutionListener@402dae86, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@771d0054]
+20:53:47,574  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+20:53:47,681  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+20:53:47,774  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+20:53:47,804  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5ebd327b: startup date [Sat Jul 25 20:53:47 CST 2015]; root of context hierarchy
+20:53:47,937  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+20:53:47,942  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+20:53:48,010  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+20:53:48,143  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+20:53:48,211  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:48,221  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:48,223  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:48,263  INFO main log.MLog:92 - MLog clients using log4j logging.
+20:53:48,433  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+20:53:48,487  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:48,583  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+20:53:48,588  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+20:53:48,590  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+20:53:48,591  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+20:53:48,708  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:53:48,715  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+20:53:48,855  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+20:53:48,859  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+20:53:49,201  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+20:53:49,202  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+20:53:49,223  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1iqjgjm1nsewaa|4de1dfbe, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1iqjgjm1nsewaa|4de1dfbe, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+20:53:49,405  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+20:53:49,435  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+20:53:49,435  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+20:53:49,436  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+20:53:49,436  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+20:53:49,448  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+20:53:49,449  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+20:53:49,449  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+20:53:49,450  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+20:53:49,458  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+20:53:49,459  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+20:53:49,459  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+20:53:49,459  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+20:53:49,468  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_orderline
+20:53:49,469  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [amount, id, product_num, product_id]
+20:53:49,469  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_gvhxin4dmxj6hyjij6dft59du]
+20:53:49,470  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_gvhxin4dmxj6hyjij6dft59du, primary]
+20:53:49,479  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+20:53:49,479  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+20:53:49,480  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+20:53:49,481  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+20:53:49,489  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+20:53:49,490  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+20:53:49,490  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+20:53:49,491  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+20:53:49,499  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+20:53:49,500  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+20:53:49,501  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+20:53:49,501  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+20:53:49,510  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order
+20:53:49,511  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, order_desc, address_id, status, order_time, user_id, total_price]
+20:53:49,511  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_5svulh5x73mw5hrexlnxucxeq, fk_l7hfolyfuxf4e59q597j98t2h]
+20:53:49,512  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_5svulh5x73mw5hrexlnxucxeq, primary, fk_l7hfolyfuxf4e59q597j98t2h]
+20:53:49,519  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order_d_orderline
+20:53:49,520  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_order_id, orderlines_id]
+20:53:49,520  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_ewncatcnu1sdt050h5xol8olt, fk_lu7cpib903r4l05bcv911lnre]
+20:53:49,521  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, uk_lu7cpib903r4l05bcv911lnre]
+20:53:49,522  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+20:53:49,530  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:49,531  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:49,538  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:49,541  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:49,555  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:49,559  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:53:49,649  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1iqjgjm1nsewaa|4de1dfbe, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1iqjgjm1nsewaa|4de1dfbe, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+20:53:49,663  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5ebd327b: startup date [Sat Jul 25 20:53:47 CST 2015]; root of context hierarchy
+20:54:25,706  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+20:54:25,723  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@26c3455c, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@5dfeaee5, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7b8c6c98, org.springframework.test.context.transaction.TransactionalTestExecutionListener@402dae86, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@771d0054]
+20:54:25,804  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+20:54:25,916  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+20:54:26,011  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+20:54:26,040  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@5ebd327b: startup date [Sat Jul 25 20:54:26 CST 2015]; root of context hierarchy
+20:54:26,164  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+20:54:26,169  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+20:54:26,239  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+20:54:26,373  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+20:54:26,438  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:26,447  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:26,449  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:26,487  INFO main log.MLog:92 - MLog clients using log4j logging.
+20:54:26,657  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+20:54:26,710  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:26,824  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+20:54:26,830  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+20:54:26,832  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+20:54:26,834  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+20:54:26,953  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+20:54:26,960  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+20:54:27,103  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+20:54:27,107  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+20:54:27,459  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+20:54:27,460  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+20:54:27,482  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1iqka1dgyf7qu|4de1dfbe, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1iqka1dgyf7qu|4de1dfbe, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+20:54:27,660  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+20:54:27,685  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+20:54:27,686  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+20:54:27,686  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+20:54:27,687  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+20:54:27,696  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+20:54:27,697  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+20:54:27,698  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+20:54:27,698  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+20:54:27,706  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+20:54:27,707  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+20:54:27,707  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+20:54:27,708  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+20:54:27,716  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_orderline
+20:54:27,717  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [amount, id, product_num, product_id]
+20:54:27,717  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_gvhxin4dmxj6hyjij6dft59du]
+20:54:27,718  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_gvhxin4dmxj6hyjij6dft59du, primary]
+20:54:27,726  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+20:54:27,726  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+20:54:27,727  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+20:54:27,727  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+20:54:27,736  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+20:54:27,737  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+20:54:27,737  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+20:54:27,738  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+20:54:27,747  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+20:54:27,748  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+20:54:27,748  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+20:54:27,749  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+20:54:27,758  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order
+20:54:27,759  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, order_desc, address_id, status, order_time, user_id, total_price]
+20:54:27,759  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_5svulh5x73mw5hrexlnxucxeq, fk_l7hfolyfuxf4e59q597j98t2h]
+20:54:27,760  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_5svulh5x73mw5hrexlnxucxeq, primary, fk_l7hfolyfuxf4e59q597j98t2h]
+20:54:27,768  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order_d_orderline
+20:54:27,769  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_order_id, orderlines_id]
+20:54:27,769  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_ewncatcnu1sdt050h5xol8olt, fk_lu7cpib903r4l05bcv911lnre]
+20:54:27,770  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, uk_lu7cpib903r4l05bcv911lnre]
+20:54:27,771  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+20:54:27,778  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:27,780  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:27,787  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:27,789  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:27,804  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:27,808  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+20:54:27,906  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1iqka1dgyf7qu|4de1dfbe, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1iqka1dgyf7qu|4de1dfbe, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+20:54:28,028  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@5ebd327b: startup date [Sat Jul 25 20:54:26 CST 2015]; root of context hierarchy
+21:14:03,830  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:14:03,848  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@771d0054, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@1100c7e4, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4a435274, org.springframework.test.context.transaction.TransactionalTestExecutionListener@9da63c3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@60cb9c42]
+21:14:03,931  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+21:14:04,059  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+21:14:04,154  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+21:14:04,188  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@23d2c798: startup date [Sat Jul 25 21:14:04 CST 2015]; root of context hierarchy
+21:14:04,317  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+21:14:04,321  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+21:14:04,391  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+21:14:04,543  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+21:14:04,616  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:04,625  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:04,627  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:04,667  INFO main log.MLog:92 - MLog clients using log4j logging.
+21:14:04,845  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+21:14:04,902  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:05,006  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:14:05,011  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+21:14:05,013  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+21:14:05,015  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+21:14:05,141  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+21:14:05,148  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+21:14:05,305  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:14:05,310  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+21:14:05,672  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+21:14:05,673  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+21:14:05,693  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1ir9j4kg509o5|48802d16, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1ir9j4kg509o5|48802d16, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:14:05,883  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+21:14:05,909  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+21:14:05,909  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+21:14:05,910  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+21:14:05,910  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+21:14:05,921  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+21:14:05,921  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+21:14:05,922  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+21:14:05,922  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+21:14:05,931  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+21:14:05,932  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+21:14:05,932  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+21:14:05,933  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+21:14:05,941  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_orderline
+21:14:05,942  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [amount, id, product_num, product_id]
+21:14:05,942  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_gvhxin4dmxj6hyjij6dft59du]
+21:14:05,943  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_gvhxin4dmxj6hyjij6dft59du, primary]
+21:14:05,953  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+21:14:05,954  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+21:14:05,954  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+21:14:05,955  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+21:14:05,965  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+21:14:05,965  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+21:14:05,966  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+21:14:05,966  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+21:14:05,975  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+21:14:05,976  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+21:14:05,976  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+21:14:05,977  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+21:14:05,987  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order
+21:14:05,987  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, order_desc, address_id, status, order_time, user_id, total_price]
+21:14:05,988  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_5svulh5x73mw5hrexlnxucxeq, fk_l7hfolyfuxf4e59q597j98t2h]
+21:14:05,988  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_5svulh5x73mw5hrexlnxucxeq, primary, fk_l7hfolyfuxf4e59q597j98t2h]
+21:14:05,997  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order_d_orderline
+21:14:05,997  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_order_id, orderlines_id]
+21:14:05,998  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_ewncatcnu1sdt050h5xol8olt, fk_lu7cpib903r4l05bcv911lnre]
+21:14:05,998  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, uk_lu7cpib903r4l05bcv911lnre]
+21:14:05,999  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+21:14:06,006  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:06,008  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:06,014  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:06,017  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:06,031  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:06,036  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:06,146  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1ir9j4kg509o5|48802d16, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1ir9j4kg509o5|48802d16, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+21:14:06,241 ERROR main ast.ErrorCounter:78 - line 1:17: unexpected token: from
+21:14:06,242 ERROR main ast.ErrorCounter:73 - line 1:17: unexpected token: from
+line 1:17: unexpected token: from
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectClause(HqlBaseParser.java:1343)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectFrom(HqlBaseParser.java:1062)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:731)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:323)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:186)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.eagle.dangdang.order.dao.impl.OrderDaoImpl.getOrderByUserId(OrderDaoImpl.java:22)
+	at com.eagle.dangdang.order.service.impl.OrderServiceImpl.getOrderByUserId(OrderServiceImpl.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy52.getOrderByUserId(Unknown Source)
+	at com.eagle.dangdang.test.OrderServiceTest.testGetByUserID(OrderServiceTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+21:14:06,244 ERROR main ast.ErrorCounter:78 - line 1:46: expecting "by", found '.'
+21:14:06,244 ERROR main ast.ErrorCounter:73 - line 1:46: expecting "by", found '.'
+line 1:46: expecting "by", found '.'
+	at antlr.Parser.match(Parser.java:211)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.orderByClause(HqlBaseParser.java:1203)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.queryRule(HqlBaseParser.java:780)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.selectStatement(HqlBaseParser.java:323)
+	at org.hibernate.hql.internal.antlr.HqlBaseParser.statement(HqlBaseParser.java:186)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.parse(QueryTranslatorImpl.java:295)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:203)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:158)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:131)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:93)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:167)
+	at org.hibernate.internal.AbstractSessionImpl.getHQLQueryPlan(AbstractSessionImpl.java:301)
+	at org.hibernate.internal.AbstractSessionImpl.createQuery(AbstractSessionImpl.java:236)
+	at org.hibernate.internal.SessionImpl.createQuery(SessionImpl.java:1836)
+	at com.eagle.dangdang.order.dao.impl.OrderDaoImpl.getOrderByUserId(OrderDaoImpl.java:22)
+	at com.eagle.dangdang.order.service.impl.OrderServiceImpl.getOrderByUserId(OrderServiceImpl.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:99)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:281)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:96)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:207)
+	at com.sun.proxy.$Proxy52.getOrderByUserId(Unknown Source)
+	at com.eagle.dangdang.test.OrderServiceTest.testGetByUserID(OrderServiceTest.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:50)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+21:14:06,256  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@23d2c798: startup date [Sat Jul 25 21:14:04 CST 2015]; root of context hierarchy
+21:14:40,188  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:14:40,205  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@402dae86, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@771d0054, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1100c7e4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4a435274, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9da63c3]
+21:14:40,285  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+21:14:40,396  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+21:14:40,497  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+21:14:40,527  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@69cd468c: startup date [Sat Jul 25 21:14:40 CST 2015]; root of context hierarchy
+21:14:40,654  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+21:14:40,659  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+21:14:40,723  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+21:14:40,861  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+21:14:40,930  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:40,940  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:40,942  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:40,982  INFO main log.MLog:92 - MLog clients using log4j logging.
+21:14:41,154  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+21:14:41,208  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:41,313  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:14:41,319  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+21:14:41,321  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+21:14:41,322  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+21:14:41,438  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+21:14:41,445  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+21:14:41,592  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:14:41,597  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+21:14:41,951  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+21:14:41,951  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+21:14:41,984  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1irab5b49jpcw|2ea8d3b0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1irab5b49jpcw|2ea8d3b0, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:14:42,153  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+21:14:42,178  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+21:14:42,179  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+21:14:42,179  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+21:14:42,180  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+21:14:42,189  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+21:14:42,190  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+21:14:42,191  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+21:14:42,191  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+21:14:42,199  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+21:14:42,200  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+21:14:42,200  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+21:14:42,201  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+21:14:42,209  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_orderline
+21:14:42,209  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [amount, id, product_num, product_id]
+21:14:42,210  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_gvhxin4dmxj6hyjij6dft59du]
+21:14:42,210  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_gvhxin4dmxj6hyjij6dft59du, primary]
+21:14:42,218  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+21:14:42,219  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+21:14:42,219  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+21:14:42,220  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+21:14:42,229  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+21:14:42,229  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+21:14:42,230  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+21:14:42,230  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+21:14:42,238  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+21:14:42,239  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+21:14:42,239  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+21:14:42,240  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+21:14:42,249  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order
+21:14:42,249  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, order_desc, address_id, status, order_time, user_id, total_price]
+21:14:42,250  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_5svulh5x73mw5hrexlnxucxeq, fk_l7hfolyfuxf4e59q597j98t2h]
+21:14:42,250  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_5svulh5x73mw5hrexlnxucxeq, primary, fk_l7hfolyfuxf4e59q597j98t2h]
+21:14:42,258  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order_d_orderline
+21:14:42,259  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_order_id, orderlines_id]
+21:14:42,259  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_ewncatcnu1sdt050h5xol8olt, fk_lu7cpib903r4l05bcv911lnre]
+21:14:42,260  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, uk_lu7cpib903r4l05bcv911lnre]
+21:14:42,261  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+21:14:42,269  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:42,270  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:42,277  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:42,279  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:42,293  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:42,296  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:14:42,387  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1irab5b49jpcw|2ea8d3b0, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1irab5b49jpcw|2ea8d3b0, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+21:14:42,576  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@69cd468c: startup date [Sat Jul 25 21:14:40 CST 2015]; root of context hierarchy
+21:17:17,362  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:17:17,380  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7b8c6c98, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@402dae86, org.springframework.test.context.support.DirtiesContextTestExecutionListener@771d0054, org.springframework.test.context.transaction.TransactionalTestExecutionListener@1100c7e4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@4a435274]
+21:17:17,462  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+21:17:17,574  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+21:17:17,671  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+21:17:17,701  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@7cd49a0a: startup date [Sat Jul 25 21:17:17 CST 2015]; root of context hierarchy
+21:17:17,831  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+21:17:17,835  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+21:17:17,901  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+21:17:18,030  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+21:17:18,096  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:18,106  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:18,108  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:18,147  INFO main log.MLog:92 - MLog clients using log4j logging.
+21:17:18,311  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+21:17:18,362  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:18,458  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:17:18,464  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+21:17:18,466  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+21:17:18,467  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+21:17:18,583  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+21:17:18,590  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+21:17:18,738  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:17:18,742  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+21:17:19,145  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+21:17:19,145  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+21:17:19,170  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1irdof0s1zcmb|28285ae4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1irdof0s1zcmb|28285ae4, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:17:19,352  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+21:17:19,375  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+21:17:19,376  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+21:17:19,376  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+21:17:19,377  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+21:17:19,386  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+21:17:19,387  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+21:17:19,387  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+21:17:19,388  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+21:17:19,397  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+21:17:19,398  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+21:17:19,398  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+21:17:19,399  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+21:17:19,407  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_orderline
+21:17:19,407  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [amount, id, product_num, product_id]
+21:17:19,408  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_gvhxin4dmxj6hyjij6dft59du]
+21:17:19,408  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_gvhxin4dmxj6hyjij6dft59du, primary]
+21:17:19,416  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+21:17:19,417  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+21:17:19,417  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+21:17:19,418  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+21:17:19,426  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+21:17:19,427  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+21:17:19,427  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+21:17:19,428  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+21:17:19,438  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+21:17:19,439  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+21:17:19,440  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+21:17:19,440  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+21:17:19,449  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order
+21:17:19,449  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, order_desc, address_id, status, order_time, user_id, total_price]
+21:17:19,450  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_5svulh5x73mw5hrexlnxucxeq, fk_l7hfolyfuxf4e59q597j98t2h]
+21:17:19,450  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_5svulh5x73mw5hrexlnxucxeq, primary, fk_l7hfolyfuxf4e59q597j98t2h]
+21:17:19,459  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order_d_orderline
+21:17:19,459  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_order_id, orderlines_id]
+21:17:19,460  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_ewncatcnu1sdt050h5xol8olt, fk_lu7cpib903r4l05bcv911lnre]
+21:17:19,460  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, uk_lu7cpib903r4l05bcv911lnre]
+21:17:19,462  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+21:17:19,469  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:19,470  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:19,477  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:19,479  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:19,493  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:19,496  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:19,596  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1irdof0s1zcmb|28285ae4, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1irdof0s1zcmb|28285ae4, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+21:17:19,801  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@7cd49a0a: startup date [Sat Jul 25 21:17:17 CST 2015]; root of context hierarchy
+21:17:43,768  INFO main support.DefaultTestContextBootstrapper:256 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+21:17:43,786  INFO main support.DefaultTestContextBootstrapper:182 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@402dae86, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@771d0054, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1100c7e4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4a435274, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@9da63c3]
+21:17:43,868  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+21:17:43,975  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [shiro.xml]
+21:17:44,068  INFO main xml.XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [persistence-context.xml]
+21:17:44,098  INFO main support.GenericApplicationContext:510 - Refreshing org.springframework.context.support.GenericApplicationContext@69cd468c: startup date [Sat Jul 25 21:17:44 CST 2015]; root of context hierarchy
+21:17:44,219  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [jdbc.properties]
+21:17:44,223  INFO main support.PropertySourcesPlaceholderConfigurer:172 - Loading properties file from class path resource [mail.properties]
+21:17:44,290  INFO main annotation.AutowiredAnnotationBeanPostProcessor:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+21:17:44,426  INFO main util.Version:27 - HV000001: Hibernate Validator 5.1.3.Final
+21:17:44,491  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'validator' of type [class org.springframework.validation.beanvalidation.LocalValidatorFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:44,500  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' of type [class org.springframework.transaction.annotation.AnnotationTransactionAttributeSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:44,502  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'org.springframework.transaction.config.internalTransactionAdvisor' of type [class org.springframework.transaction.interceptor.BeanFactoryTransactionAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:44,541  INFO main log.MLog:92 - MLog clients using log4j logging.
+21:17:44,708  INFO main c3p0.C3P0Registry:216 - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+21:17:44,761  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'dataSource' of type [class com.mchange.v2.c3p0.ComboPooledDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:44,858  INFO main common.Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+21:17:44,863  INFO main hibernate.Version:54 - HHH000412: Hibernate Core {4.3.10.Final}
+21:17:44,865  INFO main cfg.Environment:239 - HHH000206: hibernate.properties not found
+21:17:44,866  INFO main cfg.Environment:346 - HHH000021: Bytecode provider name : javassist
+21:17:44,982  INFO main dialect.Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+21:17:44,990  INFO main internal.LobCreatorBuilder:88 - HHH000422: Disabling contextual LOB creation as connection was null
+21:17:45,131  INFO main internal.TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+21:17:45,135  INFO main ast.ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+21:17:45,474  INFO main hbm2ddl.SchemaUpdate:207 - HHH000228: Running hbm2ddl schema update
+21:17:45,475  INFO main hbm2ddl.SchemaUpdate:218 - HHH000102: Fetching database metadata
+21:17:45,495  INFO main impl.AbstractPoolBackedDataSource:522 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1ire8s817qc6h9|327579f6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1ire8s817qc6h9|327579f6, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+21:17:45,671  INFO main hbm2ddl.SchemaUpdate:230 - HHH000396: Updating schema
+21:17:45,695  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_book
+21:17:45,696  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [word_number, publisth_time, author, total_page, product_id, catalogue, isbn, print_time, author_summary, print_num, which_edition, publishing]
+21:17:45,696  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_cmll0ml8ponb3jl145plkn46h]
+21:17:45,697  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+21:17:45,706  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category
+21:17:45,706  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, level, description, name, en_name, parent_id]
+21:17:45,707  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_l7y3df7r3fv2488oan3gubjxg]
+21:17:45,707  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_l7y3df7r3fv2488oan3gubjxg, primary]
+21:17:45,716  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_category_d_book
+21:17:45,717  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_category_id, books_product_id]
+21:17:45,717  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_hhlnkmc851a1pj2nkwm1do5ny, fk_4wuiqbifgrjfet2io10ex5skp]
+21:17:45,718  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, fk_4wuiqbifgrjfet2io10ex5skp]
+21:17:45,726  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_orderline
+21:17:45,726  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [amount, id, product_num, product_id]
+21:17:45,727  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_gvhxin4dmxj6hyjij6dft59du]
+21:17:45,727  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_gvhxin4dmxj6hyjij6dft59du, primary]
+21:17:45,736  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_product
+21:17:45,736  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [has_deleted, dang_price, id, product_pic, keywords, fixed_price, description, product_name, add_time]
+21:17:45,737  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+21:17:45,737  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary]
+21:17:45,746  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_receive_address
+21:17:45,746  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, phone, postal_code, receive_name, full_address, user_id, mobile]
+21:17:45,747  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_d6lrse04uwap8jdifji26paxn]
+21:17:45,747  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_d6lrse04uwap8jdifji26paxn, primary]
+21:17:45,756  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_user
+21:17:45,757  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, email_verify_code, nickname, last_login_time, email, user_integral, last_login_ip, is_email_verify, password]
+21:17:45,758  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: []
+21:17:45,758  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [uk_pbe67nvqcwkuarmpcjr7s26e6, primary]
+21:17:45,767  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order
+21:17:45,768  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [id, order_desc, address_id, status, order_time, user_id, total_price]
+21:17:45,768  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_5svulh5x73mw5hrexlnxucxeq, fk_l7hfolyfuxf4e59q597j98t2h]
+21:17:45,769  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [fk_5svulh5x73mw5hrexlnxucxeq, primary, fk_l7hfolyfuxf4e59q597j98t2h]
+21:17:45,777  INFO main hbm2ddl.TableMetadata:65 - HHH000261: Table found: mydangdang.d_order_d_orderline
+21:17:45,777  INFO main hbm2ddl.TableMetadata:66 - HHH000037: Columns: [d_order_id, orderlines_id]
+21:17:45,778  INFO main hbm2ddl.TableMetadata:68 - HHH000108: Foreign keys: [fk_ewncatcnu1sdt050h5xol8olt, fk_lu7cpib903r4l05bcv911lnre]
+21:17:45,778  INFO main hbm2ddl.TableMetadata:69 - HHH000126: Indexes: [primary, uk_lu7cpib903r4l05bcv911lnre]
+21:17:45,779  INFO main hbm2ddl.SchemaUpdate:267 - HHH000232: Schema update complete
+21:17:45,786  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.springframework.orm.hibernate4.LocalSessionFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:45,788  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'sessionFactory' of type [class org.hibernate.internal.SessionFactoryImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:45,794  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userDAO' of type [class com.eagle.dangdang.user.dao.UserDAOImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:45,797  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'userService' of type [class com.eagle.dangdang.user.service.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:45,810  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'myRealm' of type [class com.eagle.dangdang.security.MyRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:45,813  INFO main support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker:309 - Bean 'securityManager' of type [class org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:17:45,902  INFO main hibernate4.HibernateTransactionManager:360 - Using DataSource [com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 2, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 3000, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> doap3f9a1ire8s817qc6h9|327579f6, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> doap3f9a1ire8s817qc6h9|327579f6, idleConnectionTestPeriod -> 60, initialPoolSize -> 2, jdbcUrl -> jdbc:mysql://localhost:3306/mydangdang?useUnicode=true&characterEncoding=utf-8, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 60, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 3, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]] of Hibernate SessionFactory for HibernateTransactionManager
+21:17:46,102  INFO Thread-5 support.GenericApplicationContext:862 - Closing org.springframework.context.support.GenericApplicationContext@69cd468c: startup date [Sat Jul 25 21:17:44 CST 2015]; root of context hierarchy

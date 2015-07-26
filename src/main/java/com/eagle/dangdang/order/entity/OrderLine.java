@@ -1,10 +1,12 @@
 package com.eagle.dangdang.order.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -35,13 +37,51 @@ public class OrderLine {
 	private long id;
 	
 	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name="product_id")
 	private Product product;
 	
-	private int product_num;
 	
-	private Order order;
+	@Column(name="product_num",nullable=false)
+	private int productNum;
 	
+	@Column(name="amount")
 	private double amount;
-	
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public Product getProduct() {
+		return product;
+	}
+
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+
+
+	public int getProductNum() {
+		return productNum;
+	}
+
+	public void setProductNum(int productNum) {
+		this.productNum = productNum;
+	}
+
+	public double getAmount() {
+		return amount;
+	}
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+	public OrderLine() {
+		super();
+	}
 	
 }
