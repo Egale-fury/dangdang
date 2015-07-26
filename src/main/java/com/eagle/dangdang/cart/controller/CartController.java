@@ -95,6 +95,7 @@ public class CartController {
 	
 	
 	//购物车列表显示
+	@RequestMapping(value="/list",method=RequestMethod.GET)
 	public String cartList(HttpSession session){
 		Cart cart =(Cart)session.getAttribute("currentCart");
 		if(cart==null){

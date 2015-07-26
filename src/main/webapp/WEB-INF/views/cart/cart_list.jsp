@@ -8,5 +8,6 @@
 </head>
 <body>
 
+${currentCart }
 </body>
 </html>

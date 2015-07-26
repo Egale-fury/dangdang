@@ -83,5 +83,11 @@ public class OrderLine {
 	public OrderLine() {
 		super();
 	}
+
+	@Override
+	public String toString() {
+		return "OrderLine [id=" + id + ", product=" + product + ", productNum="
+				+ productNum + ", amount=" + amount + "]";
+	}
 	
 }

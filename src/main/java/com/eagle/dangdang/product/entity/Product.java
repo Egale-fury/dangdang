@@ -158,6 +158,15 @@ public class Product {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return "Product [id=" + id + ", productName=" + productName
+				+ ", description=" + description + ", addTime=" + addTime
+				+ ", fixedPrice=" + fixedPrice + ", dangPrice=" + dangPrice
+				+ ", keywords=" + keywords + ", hasDeleted=" + hasDeleted
+				+ ", productPic=" + productPic + "]";
+	}
+
 	
 	
 }

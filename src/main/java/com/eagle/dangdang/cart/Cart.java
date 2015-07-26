@@ -18,6 +18,7 @@ public class Cart {
 
 	// 添加商品
 	public void addProduct(Product product, int num) {
+		boolean flag = false;
 		if (items.size() == 0) {
 			// 开启一条新的列表项
 			OrderLine newOrderLine = new OrderLine();
@@ -33,7 +34,18 @@ public class Cart {
 					line.setProductNum(line.getProductNum() + num);
 					line.setAmount(line.getAmount()
 							+ line.getProduct().getDangPrice() * num);
+					flag = true;
+					break;
 				}
+
+			}
+			if (!flag) {
+				// 开启一条新的列表项
+				OrderLine newOrderLine = new OrderLine();
+				newOrderLine.setProduct(product);
+				newOrderLine.setProductNum(num);
+				newOrderLine.setAmount(product.getDangPrice() * num);
+				items.add(newOrderLine);
 			}
 		}
 	}
@@ -103,6 +115,11 @@ public class Cart {
 
 	public void setDeletedItems(List<OrderLine> deletedItems) {
 		this.deletedItems = deletedItems;
+	}
+
+	@Override
+	public String toString() {
+		return "Cart [items=" + items + ", deletedItems=" + deletedItems + "]";
 	}
 
 }
