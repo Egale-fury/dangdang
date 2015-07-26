@@ -27,7 +27,7 @@ public class UserServiceTest {
 		System.out.println(userService.findUserByEmail("978364051@qq.com"));
 	}
 
-	@Test
+	//@Test
 	public void testAuthenticate() {
 		User user=null;
 		try {
@@ -62,6 +62,12 @@ public class UserServiceTest {
 
 		userService.addUser(user);
 		System.out.println(user);
+	}
+	
+	@Test
+	public void testGetUserAddress(){
+		User user =userService.findUserByEmail("978364051@qq.com");
+		System.out.println(userService.getAddresses(user.getId()));
 	}
 
 	public UserService getUserService() {
